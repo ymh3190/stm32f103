@@ -49,3 +49,11 @@ is the debugger that we're going to use and then the target(the chip that we'd l
     pc: program counter
     r0, r5: value
 11. refresh
+
+## troubleshooting
+
+Mac: https://developer.arm.com/downloads/-/gnu-rm 맥 버전 다운
+sudo mkdir -p /opt/gcc-arm
+sudo tar -xjf gcc-arm-none-eabi-\*-mac.tar.bz2 -C /opt/gcc-arm --strip-components=1
+echo 'export PATH="/opt/gcc-arm/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
